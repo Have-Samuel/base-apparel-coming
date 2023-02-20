@@ -5,3 +5,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: #f2f2f2;
+}
+
+section {
+  margin: 6rem auto;
+  height: 800px;
+  width: 375px;
+  background: linear-gradient(150.03deg, #fff 0%, #fff4f4 84.51%);
+}
+
+.logo img {
+  width: 100px;
+  margin: 2rem 15rem 2.1rem 2rem;
+}
+
+.image {
+  height: 250px;
+  width: 376px;
+  background: url('./images/hero-mobile.jpg');
+  background-repeat: no-repeat;
+}
+
+.content h1 {
+  margin-top: 4rem;
+  text-align: center;
+  color: rgba(66, 58, 58, 1);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 11px;
+}
+
+.content h1 span {
+  color: rgba(206, 152, 152, 1);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 11px;
+}
+
+.content p {
+  height: 88px;
+  width: 311px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(206, 152, 152, 1);
+  margin: 1rem 2rem 2.25rem 2rem;
+}
