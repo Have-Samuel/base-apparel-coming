@@ -60,3 +60,33 @@ section {
   color: rgba(206, 152, 152, 1);
   margin: 1rem 2rem 2.25rem 2rem;
 }
+
+.content input {
+  height: 48px;
+  width: 311px;
+  opacity: 0.5;
+  border: 1px solid #ce9898;
+  border-radius: 28px;
+  align-items: center;
+  margin: 0 2rem 5.8rem 2rem;
+  position: relative;
+}
+
+.clear {
+  height: 48px;
+  width: 64px;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+  box-shadow: 0 15px 20px rgba(198, 110, 110, 0.247569);
+  border-radius: 28px;
+  position: absolute;
+  left: 55.5%;
+  top: 82%;
+}
+
+.arrow {
+  /* eight: 18px;
+  width: 9px;h */
+  top: 15px;
+  position: absolute;
+  left: 57%;
+}
