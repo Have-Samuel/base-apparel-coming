@@ -81,6 +81,7 @@ section {
   position: absolute;
   left: 55.5%;
   top: 82%;
+  cursor: pointer;
 }
 
 .arrow {
