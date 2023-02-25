@@ -57,8 +57,12 @@ section {
   font-weight: 400;
   line-height: 22px;
   text-align: center;
-  color: rgba(206, 152, 152, 1);
+  color: #ce9898;
   margin: 1rem 2rem 2.25rem 2rem;
+}
+
+.enter {
+  position: relative;
 }
 
 .enter input {
@@ -71,15 +75,14 @@ section {
   padding-left: 1rem;
   margin: 0 2rem 5.8rem 2rem;
   color: #ce9898;
-  /* border-color: red; */
+}
+
+::placeholder {
+  color: #ce9898;
+  background: linear-gradient(150.03deg, #fff 0%, #fff4f4 84.51%);
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
-  text-align: left;
-}
-
-.enter {
-  position: relative;
 }
 
 .clear {
