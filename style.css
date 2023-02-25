@@ -96,8 +96,8 @@ section {
 }
 
 .arrow {
-  /* eight: 18px;
-  width: 9px;h */
+  height: 18px;
+  width: 9px;
   top: 13px;
   position: absolute;
   left: 50%;
