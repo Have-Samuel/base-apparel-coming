@@ -110,7 +110,10 @@ button {
   color: tomato;
 }
 
-.active {
-  color: #0e0d0d;
-  border: 2px solid magenta;
+.error {
+  /* margin-top: 10px; */
+  color: #af0c0c;
+  background-color: #ffe0e0;
+  padding: 8px;
+  display: none;
 }
