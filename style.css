@@ -109,3 +109,9 @@ button {
 .btn {
   color: tomato;
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 0 2rem 0 2rem;
+}

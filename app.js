@@ -7,10 +7,11 @@ const dotpos = input.value.lastIndexOf('.');
 
 btn.addEventListener('click', (e) => {
   e.preventDefault();
-  if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= input.value.length) {
-    console.log('not valid');
-  } else {
-    console.log('valid');
-    throw new Error('not valid');
+  input.textContent = '';
+  input.classList.toggle('error');
+  if (atpos < 1 || dotpos < atpos + 2
+    || dotpos + 2 >= input.value.length) {
+    input.textContent = 'Please provide a valid email';
+    input.classList.toggle('error');
   }
 });
