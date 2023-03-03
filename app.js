@@ -2,16 +2,21 @@
 const input = document.querySelector('input');
 const btn = document.querySelector('button');
 
-const atpos = input.value.indexOf('@');
-const dotpos = input.value.lastIndexOf('.');
+// const atSign = input.value.indexOf('@');
+// const dotSign = input.value.lastIndexOf('.');
 
 btn.addEventListener('click', (e) => {
   e.preventDefault();
-  input.textContent = '';
+  const lowText = document.createElement('p');
+  lowText.innerText = input.value.toLowerCase();
+  lowText.classList.toggle('lowText');
+  input.innerText = 'Please provide a valid email';
   input.classList.toggle('error');
-  if (atpos < 1 || dotpos < atpos + 2
-    || dotpos + 2 >= input.value.length) {
-    input.textContent = 'Please provide a valid email';
+  input.appendChild(lowText);
+  input.value = '';
+  if (input.value === '') {
     input.classList.toggle('error');
+  } else {
+    input.classList.remove('error');
   }
 });
