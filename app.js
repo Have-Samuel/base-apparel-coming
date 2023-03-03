@@ -4,17 +4,32 @@ const emailInput = document.querySelector('#email');
 const btn = document.querySelector('button');
 
 // Email Validation
+const isEmail = (email) => {
+  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+};
 
 // function thatr wiil create an error
 const highlightError = (emailInput, errorMessage) => {
   emailInput.parentNode.classList.add('form__field--error');
-  emailInput.nextElementSilbling.textContent = errorMessage;
+  emailInput.nextElementSilbling.innerText = errorMessage;
+};
+
+// function that will remove the error
+const clearError = (emailInput) => {
+  emailInput.parentNode.classList.remove('form__field--error');
+  emailInput.nextElementSilbling.innerText = '';
 };
 
 const validate = () => {
+  clearError(emailInput);
+
   const emailValue = emailInput.value.trim();
   if (!emailValue) {
     highlightError(emailInput, 'Please provide a valid email!');
+  } else {
+    if (!isEmail(emailValue)) {
+      highlightError(emailInput, 'Email is not Valid!');
+    }
   }
 };
 
