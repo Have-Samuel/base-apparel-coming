@@ -1,24 +1,14 @@
 const form = document.querySelector('form');
-const input = document.querySelector('input');
+const input = document.querySelector('#email');
+// const error = document.querySelector('.error');
 const btn = document.querySelector('button');
 
-form.addEventListener('submit', (e) => {
+btn.addEventListener('submit', (e) => {
   e.preventDefault();
-  btn.addEventListener('click', () => {
-    console.log('HELLO!');
-    if (input.value.trim() === '') {
-      input.innerText = 'Please provide a valid email ';
-      input.style.display = 'block';
-      return false;
-    }
-  });
+  console.log('HELLO!');
+  if (input.validity.typeMismatch) {
+    input.setCustomValidity('Please provide a valid email!');
+  } else {
+    input.setCustomValidity('');
+  }
 });
-
-// document.form['main-form'].onsubmit = (e) => {
-//   if (this.input.value.trim() === '') {
-//     document.querySelector('#email').innerHTML = 'Please provide a valid email';
-//     document.querySelector('#email').style.display = 'block';
-//     e.preventDefault();
-//     return false;
-//   }
-// };
