@@ -1,4 +1,4 @@
-const form = document.querySelector('form');
+const form = document.querySelector('.form-js');
 const emailInput = document.querySelector('#email');
 // const error = document.querySelector('.error');
 // const btn = document.querySelector('button');
@@ -24,10 +24,8 @@ const validate = () => {
   const emailValue = emailInput.value.trim();
   if (!emailValue) {
     highlightError(emailInput, 'Please provide a valid email!');
-  } else {
-    if (!isEmail(emailValue)) {
-      highlightError(emailInput, 'Email is not Valid!');
-    }
+  } else if (!isEmail(emailValue)) {
+    highlightError(emailInput, 'Email is not Valid!');
   }
 };
 
