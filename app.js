@@ -1,7 +1,7 @@
 const form = document.querySelector('.form-js');
 const emailInput = document.querySelector('#email');
 // const textError = document.querySelector('.error');
-// const error = document.querySelector('.error');
+const error = document.querySelector('.error');
 // const btn = document.querySelector('button');
 
 // Email Validation with regular expression
@@ -10,18 +10,20 @@ const isEmail = (email) => /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/.tes
 // function thatr wiil create an error
 const highlightError = (emailInput, errorMessage) => {
   emailInput.parentNode.classList.add('form__field--error');
-  emailInput.nextElementSilbling.innerText = errorMessage;
+  error.innerText = errorMessage;
+  // console.log(emailInput);
 };
 
 // Function that will remove the error
 const clearError = (emailInput) => {
   emailInput.parentNode.classList.remove('form__field--error');
-  emailInput.nextElementSilbling.innerText = '';
+  // console.log(emailInput.nextElementSilbling);
+  error.innerText = '';
 };
 
 const validate = () => {
   const emailValue = emailInput.value.trim();
-
+  console.log(emailValue);
   clearError(emailInput);
 
   if (!emailValue) {
