@@ -13,7 +13,7 @@ const highlightError = (emailInput, errorMessage) => {
   emailInput.nextElementSilbling.innerText = errorMessage;
 };
 
-// function that will remove the error
+// Function that will remove the error
 const clearError = (emailInput) => {
   emailInput.parentNode.classList.remove('form__field--error');
   emailInput.nextElementSilbling.innerText = '';
