@@ -1,9 +1,10 @@
 const form = document.querySelector('.form-js');
 const emailInput = document.querySelector('#email');
+// const textError = document.querySelector('.error');
 // const error = document.querySelector('.error');
 // const btn = document.querySelector('button');
 
-// Email Validation
+// Email Validation with regular expression
 const isEmail = (email) => /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/.test(email);
 
 // function thatr wiil create an error
