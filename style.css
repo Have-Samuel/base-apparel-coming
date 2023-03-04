@@ -73,7 +73,6 @@ section {
   font-family: 'Josefin Sans', sans-serif;
   border-radius: 28px;
   padding-left: 1rem;
-  /* margin: 0 0 5.8rem 0; */
   color: #ce9898;
   margin: 0 2rem 5.8rem 2rem;
 }
@@ -120,7 +119,6 @@ button {
 .form__field--error {
   border: 1px solid red;
   border-radius: 28px;
-  /* padding-left: 1rem; */
   margin: 0 2rem 5.8rem 2rem;
   height: 48px;
   width: 311px;
