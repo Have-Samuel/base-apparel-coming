@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #f2f2f2;
+  background: #dfdddd;
 }
 
 section {
@@ -65,7 +65,7 @@ section {
   position: relative;
 }
 
-.form input {
+.mail {
   height: 48px;
   width: 311px;
   opacity: 0.5;
@@ -74,7 +74,7 @@ section {
   border-radius: 28px;
   padding-left: 1rem;
   color: #ce9898;
-  margin: 0 2rem 5.8rem 0;
+  margin: 0 2rem 1rem 2rem;
 }
 
 ::placeholder {
@@ -106,12 +106,12 @@ button {
   left: 50%;
 }
 
-.btn {
+/* .btn {
   color: tomato;
-}
+} */
 
 .error {
-  /* margin-top: 4px; */
+  margin-top: 4px;
   color: #af0c0c;
   font-size: 14px;
 }
@@ -119,7 +119,7 @@ button {
 .form__field--error {
   border: 1px solid red;
   border-radius: 28px;
-  margin: 0 2rem 5.8rem 2rem;
+  margin: 0 2rem;
   height: 48px;
   width: 311px;
 }

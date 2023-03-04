@@ -9,21 +9,19 @@ const isEmail = (email) => /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/.tes
 
 // function thatr wiil create an error
 const highlightError = (emailInput, errorMessage) => {
-  emailInput.parentNode.classList.add('form__field--error');
+  emailInput.classList.add('form__field--error');
   error.innerText = errorMessage;
-  // console.log(emailInput);
 };
 
 // Function that will remove the error
 const clearError = (emailInput) => {
-  emailInput.parentNode.classList.remove('form__field--error');
-  // console.log(emailInput.nextElementSilbling);
+  emailInput.classList.remove('form__field--error');
   error.innerText = '';
 };
 
 const validate = () => {
   const emailValue = emailInput.value.trim();
-  console.log(emailValue);
+
   clearError(emailInput);
 
   if (!emailValue) {
