@@ -111,9 +111,26 @@ button {
 } */
 
 .error {
-  margin-top: 4px;
-  color: #af0c0c;
-  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #f96464;
+  margin: 0.3rem 2.5rem;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.error-image {
+  position: absolute;
+  left: 245px;
+  top: 13px;
+  display: none;
+}
+
+.round-icon {
+  position: absolute;
+  left: 245px;
+  top: 13px;
+  /* display: none; */
 }
 
 .form__field--error {
