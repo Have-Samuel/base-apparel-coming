@@ -19,9 +19,10 @@ const clearError = (emailInput) => {
 };
 
 const validate = () => {
+  const emailValue = emailInput.value.trim();
+
   clearError(emailInput);
 
-  const emailValue = emailInput.value.trim();
   if (!emailValue) {
     highlightError(emailInput, 'Please provide a valid email!');
   } else if (!isEmail(emailValue)) {
