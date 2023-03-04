@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+section {
+  margin: 6rem auto;
+  height: 800px;
+  width: 375px;
+  background: linear-gradient(150.03deg, #fff 0%, #fff4f4 84.51%);
+}
+
+.logo img {
+  width: 100px;
+  margin: 2rem 15rem 2.1rem 2rem;
+}
+
+.image {
+  height: 250px;
+  width: 376px;
+  background: url('./images/hero-mobile.jpg');
+  background-repeat: no-repeat;
+}
+
+.content h1 {
+  margin-top: 4rem;
+  text-align: center;
+  color: rgba(66, 58, 58, 1);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 11px;
+}
+
+.content h1 span {
+  color: rgba(206, 152, 152, 1);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 11px;
+}
+
+.content p {
+  height: 88px;
+  width: 311px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: #ce9898;
+  margin: 1rem 2rem 2.25rem 2rem;
+}
+
+.form {
+  position: relative;
+}
+
+.form input {
+  height: 48px;
+  width: 311px;
+  opacity: 0.5;
+  border: 1px solid #ce9898;
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 28px;
+  padding-left: 1rem;
+  color: #ce9898;
+  margin: 0 2rem 5.8rem 2rem;
+}
+
+::placeholder {
+  color: #ce9898;
+  background: linear-gradient(150.03deg, #fff 0%, #fff4f4 84.51%);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+button {
+  height: 46px;
+  width: 65px;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+  box-shadow: 0 15px 20px rgba(198, 110, 110, 0.247569);
+  border-radius: 28px;
+  position: absolute;
+  left: 74%;
+  top: 0.1%;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow {
+  height: 18px;
+  width: 9px;
+  top: 13px;
+  position: absolute;
+  left: 50%;
+}
+
+.btn {
+  color: tomato;
+}
+
+.error {
+  margin-top: 10px;
+  color: #af0c0c;
+  font-size: 14px;
+}
+
+.form__field--error {
+  border: 1px solid red;
+  border-radius: 28px;
+  margin: 0 2rem 5.8rem 2rem;
+  height: 48px;
+  width: 311px;
+}
