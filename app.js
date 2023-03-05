@@ -30,8 +30,10 @@ const validate = () => {
 
   if (!emailValue) {
     highlightError(emailInput, 'Please provide a valid email');
+    roundIcon.classList.toggle('round-icon');
   } else if (!isEmail(emailValue)) {
     highlightError(emailInput, 'Email is not Valid!');
+    roundIcon.classList.toggle('round-icon');
   }
 };
 
