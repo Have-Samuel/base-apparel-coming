@@ -7,13 +7,18 @@
 }
 
 body {
-  background: #dfdddd;
-}
+  height: 100vh;
+  /* background: #dfdddd; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 
 section {
-  margin: 6rem auto;
+  /* border: 2px solid black; */
+  /* margin: 6rem auto; */
   height: 800px;
-  width: 375px;
+  /* width: 375px; */
   background: linear-gradient(150.03deg, #fff 0%, #fff4f4 84.51%);
 }
 
@@ -27,6 +32,7 @@ section {
   width: 376px;
   background: url('./images/hero-mobile.jpg');
   background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .content h1 {
@@ -63,6 +69,7 @@ section {
 
 .form {
   position: relative;
+  /* border: 2px solid black; */
 }
 
 .mail {
@@ -140,7 +147,7 @@ button {
   width: 311px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 376px) {
   body {
     height: 800px;
     width: 1440px;
