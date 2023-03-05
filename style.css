@@ -123,14 +123,13 @@ button {
   position: absolute;
   left: 245px;
   top: 13px;
-  /* display: none; */
+  display: none;
 }
 
 .round-icon {
   position: absolute;
   left: 245px;
   top: 13px;
-  display: none;
 }
 
 .form__field--error {

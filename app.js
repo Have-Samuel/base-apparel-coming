@@ -1,7 +1,7 @@
 const form = document.querySelector('.form-js');
 const emailInput = document.querySelector('#email');
 const error = document.querySelector('.error');
-const roundIcon = document.querySelector('.form-js .error-image');
+const roundIcon = document.querySelector('#red-note');
 
 // Email Validation with regular expression
 const isEmail = (email) => /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/.test(email);
