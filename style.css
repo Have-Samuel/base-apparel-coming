@@ -25,6 +25,7 @@ section {
 .logo img {
   width: 100px;
   margin: 2rem 15rem 2.1rem 2rem;
+  z-index: 50;
 }
 
 .image {
@@ -151,17 +152,21 @@ button {
 }
 
 @media (min-width: 376px) {
-  body {
-    /* height: 800px;*/ 
-    /* width: 1440px;  */
-    /* top: -10px; */
-    display: flex;
-    /* justify-content: center;
-    align-items: center;
-    flex-direction: column; */
+  section {
+    border: 2px solid black;
   }
 
   .content {
     flex-direction: row-reverse;
+  }
+
+  .image {
+    height: 800px;
+    width: 610px;
+    background: url('./images/hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    z-index: 100;
   }
 }
