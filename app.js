@@ -8,15 +8,15 @@ const isEmail = (email) => /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/.tes
 
 // function thatr wiil create an error
 const highlightError = (emailInput, errorMessage) => {
-  roundIcon.classList.add('round-icon');
   emailInput.classList.add('form__field--error');
-
+  roundIcon.classList.add('round-icon');
+  console.log(roundIcon);
   error.innerText = errorMessage;
 };
 
 // Function that will remove the error
 const clearError = (emailInput) => {
-  roundIcon.classList.remove('round-icon');
+  // roundIcon.classList.remove('round-icon');
   emailInput.classList.remove('form__field--error');
   error.innerText = '';
   // console.log(emailInput);
@@ -25,6 +25,7 @@ const clearError = (emailInput) => {
 const validate = () => {
   const emailValue = emailInput.value.trim();
 
+  console.log(emailValue);
   clearError(emailInput);
 
   if (!emailValue) {

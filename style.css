@@ -68,7 +68,7 @@ section {
 .mail {
   height: 48px;
   width: 311px;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   border: 1px solid #ce9898;
   font-family: 'Josefin Sans', sans-serif;
   border-radius: 28px;
@@ -78,7 +78,7 @@ section {
 }
 
 ::placeholder {
-  color: #ce9898;
+  color: #c27f7f;
   background: linear-gradient(150.03deg, #fff 0%, #fff4f4 84.51%);
   font-size: 14px;
   font-weight: 400;
