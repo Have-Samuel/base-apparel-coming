@@ -152,6 +152,10 @@ button {
 }
 
 @media (min-width: 376px) {
+  .logo img {
+    position: absolute;
+  }
+
   section {
     border: 2px solid black;
   }
@@ -161,12 +165,14 @@ button {
   }
 
   .image {
-    height: 800px;
+    height: 798px;
     width: 610px;
     background: url('./images/hero-desktop.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: 100% 100%;
-    z-index: 100;
+    position: relative;
   }
+
+  
 }
