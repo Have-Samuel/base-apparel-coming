@@ -139,3 +139,11 @@ button {
   height: 48px;
   width: 311px;
 }
+
+@media (min-width: 1440px) {
+  body {
+    height: 800px;
+    width: 1440px;
+    top: -10px;
+  }
+}
