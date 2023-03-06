@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - [Github](https://github.com/Have-Samuel/base-apparel-coming)
-- [LiveLink]()
+- [LiveLink](https://have-samuel.github.io/base-apparel-coming/)
 
 ## My process
 
@@ -48,6 +48,7 @@ Users should be able to:
 - Mobile-first workflow
 - Javascript
 - Git & Gitworkflow
+- Positioning
 - Best practices
 
 ### Useful resources
