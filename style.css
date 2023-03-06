@@ -7,19 +7,21 @@
 }
 
 body {
-  background: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section {
-  margin: 6rem auto;
   height: 800px;
-  width: 375px;
   background: linear-gradient(150.03deg, #fff 0%, #fff4f4 84.51%);
 }
 
 .logo img {
   width: 100px;
   margin: 2rem 15rem 2.1rem 2rem;
+  z-index: 50;
 }
 
 .image {
@@ -27,9 +29,17 @@ section {
   width: 376px;
   background: url('./images/hero-mobile.jpg');
   background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
-.content h1 {
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content__Descptn h1 {
   margin-top: 4rem;
   text-align: center;
   color: rgba(66, 58, 58, 1);
@@ -40,7 +50,7 @@ section {
   letter-spacing: 11px;
 }
 
-.content h1 span {
+.content__Descptn h1 span {
   color: rgba(206, 152, 152, 1);
   text-align: center;
   font-size: 40px;
@@ -49,7 +59,7 @@ section {
   letter-spacing: 11px;
 }
 
-.content p {
+.content__Descptn p {
   height: 88px;
   width: 311px;
   font-family: 'Josefin Sans', sans-serif;
@@ -65,20 +75,19 @@ section {
   position: relative;
 }
 
-.form input {
+.mail {
   height: 48px;
   width: 311px;
-  opacity: 0.5;
   border: 1px solid #ce9898;
   font-family: 'Josefin Sans', sans-serif;
   border-radius: 28px;
   padding-left: 1rem;
   color: #ce9898;
-  margin: 0 2rem 5.8rem 2rem;
+  margin: 0 2rem 1rem 2rem;
 }
 
 ::placeholder {
-  color: #ce9898;
+  color: #c27f7f;
   background: linear-gradient(150.03deg, #fff 0%, #fff4f4 84.51%);
   font-size: 14px;
   font-weight: 400;
@@ -106,20 +115,132 @@ button {
   left: 50%;
 }
 
-.btn {
-  color: tomato;
+.error {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #f96464;
+  margin: 0.3rem 2.5rem;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
 }
 
-.error {
-  margin-top: 10px;
-  color: #af0c0c;
-  font-size: 14px;
+.error-image {
+  position: absolute;
+  left: 245px;
+  top: 13px;
+  display: none;
+}
+
+.round-icon {
+  position: absolute;
+  left: 245px;
+  top: 13px;
+  display: none;
 }
 
 .form__field--error {
   border: 1px solid red;
   border-radius: 28px;
-  margin: 0 2rem 5.8rem 2rem;
+  margin: 0 2rem;
   height: 48px;
   width: 311px;
+}
+
+@media (min-width: 376px) {
+  body {
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo img {
+    width: 157.6px;
+    position: absolute;
+    margin: 4rem 3rem 8rem 6rem;
+  }
+
+  section {
+    background: url('./images/bg-pattern-desktop.svg'), linear-gradient(150.03deg, #fff 0%, #faeded 84.51%);
+    background-repeat: no-repeat;
+    background-position: -20% 10%;
+  }
+
+  .content {
+    flex-direction: row-reverse;
+  }
+
+  .image {
+    height: 798px;
+    width: 610px;
+    background: url('./images/hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 60%;
+    position: relative;
+  }
+
+  .content__Descptn {
+    width: 445px;
+    margin: 0 10rem 0 6rem;
+  }
+
+  .content__Descptn h1 span {
+    width: 444px;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 64px;
+    letter-spacing: 17px;
+    text-align: left;
+  }
+
+  .content__Descptn h1 {
+    width: 444px;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 71px;
+    letter-spacing: 17.32px;
+    text-align: left;
+  }
+
+  .content__Descptn p {
+    width: 444px;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .mail {
+    width: 444px;
+    border-radius: 28px;
+    opacity: 0.5;
+    margin-left: 0;
+    padding-left: 1.5rem;
+  }
+
+  button {
+    border-radius: 28px;
+    height: 48px;
+    width: 90px;
+    position: absolute;
+    left: 353px;
+  }
+
+  button:hover {
+    opacity: 0.5;
+  }
+
+  .error {
+    margin-left: 1.5rem;
+    margin-top: 0.8rem;
+  }
+
+  .error-image {
+    position: absolute;
+    left: 320px;
+  }
 }
