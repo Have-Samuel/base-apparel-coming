@@ -131,13 +131,6 @@ button {
   display: none;
 }
 
-.round-icon {
-  position: absolute;
-  left: 245px;
-  top: 13px;
-  display: none;
-}
-
 .form__field--error {
   border: 1px solid red;
   border-radius: 28px;
