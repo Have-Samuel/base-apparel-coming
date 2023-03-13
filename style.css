@@ -95,7 +95,7 @@ section {
 }
 
 button {
-  height: 46px;
+  height: 48px;
   width: 65px;
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
   box-shadow: 0 15px 20px rgba(198, 110, 110, 0.247569);
@@ -141,7 +141,6 @@ button {
 
 @media (min-width: 376px) {
   body {
-    height: 96vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,32 +150,39 @@ button {
   .logo img {
     width: 157.6px;
     position: absolute;
-    margin: 4rem 3rem 8rem 6rem;
+    margin: 4rem 3rem 8rem 10rem;
   }
 
   section {
     background: url('./images/bg-pattern-desktop.svg'), linear-gradient(150.03deg, #fff 0%, #faeded 84.51%);
     background-repeat: no-repeat;
     background-position: -20% 10%;
+    height: 100vh;
+    width: 100vw;
   }
 
   .content {
     flex-direction: row-reverse;
   }
 
+  .content__image {
+    width: 55vw;
+    height: 100%;
+  }
+
   .image {
-    height: 798px;
-    width: 610px;
+    z-index: 50;
+    width: 44vw;
+    height: 100vh;
     background: url('./images/hero-desktop.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 60%;
+    background-size: cover;
     position: relative;
   }
 
   .content__Descptn {
-    width: 445px;
-    margin: 0 10rem 0 6rem;
+    width: 46vw;
+    margin: 0 10rem 0 10rem;
   }
 
   .content__Descptn h1 span {
