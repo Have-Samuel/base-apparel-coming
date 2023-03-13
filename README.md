@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - [Github](https://github.com/Have-Samuel/base-apparel-coming)
-- [LiveLink](https://have-samuel.github.io/base-apparel-coming/)
+- [LiveLink](https://bacoming.netlify.app/)
 
 ## My process
 
