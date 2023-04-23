@@ -14,7 +14,8 @@ body {
 }
 
 section {
-  height: 800px;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(150.03deg, #fff 0%, #fff4f4 84.51%);
 }
 
@@ -29,7 +30,6 @@ section {
   width: 376px;
   background: url('./images/hero-mobile.jpg');
   background-repeat: no-repeat;
-  background-position: 100% 100%;
 }
 
 .content {
@@ -156,8 +156,6 @@ button {
   section {
     background: url('./images/bg-pattern-desktop.svg'), linear-gradient(150.03deg, #fff 0%, #faeded 84.51%);
     background-repeat: no-repeat;
-    background-position: -20% 10%;
-    height: 100vh;
     width: 100vw;
   }
 
